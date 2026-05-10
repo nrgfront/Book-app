@@ -1,0 +1,12 @@
+.logo{
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 2.4rem;
+    vertical-align: 2px;
+   
+}
+.icon{
+    color: var(--primary);
+    font-size: 3.2rem;
+    margin-right: 0.4rem;
+}

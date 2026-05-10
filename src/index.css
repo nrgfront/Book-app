@@ -1,0 +1,177 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+-0.5px
+-1px
+1px
+
+--- 02 COLORS
+
+- Primary: #6366f1
+- Tints:
+#eff0fe
+#d0d1fb
+#8285f4
+
+
+- Shades: 
+#4f52c1
+#141430
+
+
+- Accents:#10b981
+- Greys:
+#ececec
+#6b7280 
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #eff0fe)
+#555
+#333
+
+
+
+
+--- 05 SHADOWS
+ 0 2rem 8rem rgba(0, 0, 0, 0.08);
+
+
+--- 06 BORDER-RADIUS
+
+Default: 1rem
+Medium: 1.2rem
+
+--- 07 WHITE-SPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Manrope:wght@500&display=swap");
+
+:root {
+  --primary: #6366f1; /*  بنفش اصلی*/
+  --primary-light: #eff0fe; /* بک‌گراند */
+  --primary-mid: #c1c2f9;
+  --primary-dark: #4f52c1;/* هاور دکمه */
+  
+  --text: #1f2937; /* متن اصلی */
+  --subtle: #6b7280; /* متن فرعی */
+
+  --bg:#eff0fe;
+  
+  --card:#fff;
+
+  --border: #e5e7eb;
+  --border-active: #cdcfd3;
+  --shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+label {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.cta-primary {
+  background: var(--primary);
+  color: var(--card);
+  padding: 1.2rem 2.4rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+ 
+  transition: 0.2s;
+  text-transform: uppercase;
+}
+.cta-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.cta-secondary {
+  margin-top: auto;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1.2rem 2.4rem;
+  color: var(--text);
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.active {
+  background-color: var(--border);
+}
+
+.cta-secondary:hover {
+  background-color: var(--border);
+}
+
+a,
+link {
+  text-decoration: none;
+  color: var(--text);
+}
+input {
+  border: 2px solid var(--border);
+  outline: none;
+  background-color: var(--bg);
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 3.2rem;
+}
+input:active,
+input:focus {
+  border: 2px solid var(--border-active);
+  outline: none;
+}
+
+.message{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin:  12.8rem auto;
+  background-color: var(--border);
+  border-radius: 1.2rem;
+  width: 40rem;
+  height: auto;
+}
+.verticalIcon{
+  vertical-align: -4px;
+}

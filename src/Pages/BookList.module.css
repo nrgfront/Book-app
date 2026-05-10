@@ -1,0 +1,144 @@
+
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  padding: 0 2rem;
+  gap: 2rem;
+  max-width: 110rem;
+  margin: 4rem auto 12.8rem auto;
+}
+
+.card {
+  background: var(--card);
+  padding: 1.6rem;
+  height: 100%;
+  border-radius: 1.6rem;
+  box-shadow: var(--shadow);
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  background-color: #f3f3f3;
+  border-radius: 1.6rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 3.2rem;
+  transition: 0.3s;
+}
+
+.link {
+  text-decoration: none;
+}
+.badge {
+  display: inline-block;
+  color: var(--primary);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  width: fit-content;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+.card h3 {
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  color: var(--text);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  color: var(--subtle);
+  line-height: 1.5;
+}
+
+.actions {
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBox {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem;
+}
+.btnPage {
+  background-color: var(--card);
+  color: var(--subtle);
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.btnPage:hover {
+  background-color: var(--card);
+  color: var(--text);
+}
+.active {
+  background-color: var(--primary);
+  color: var(--card);
+}
+
+.icon {
+  font-size: 2.4rem;
+
+  cursor: pointer;
+}
+.icon:hover {
+  color: var(--primary);
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+ion-icon {
+ 
+  font-size: 2rem;
+}
+
+.btnFavorite {
+  font-size: 2.4rem;
+  border: none;
+  outline: none;
+  padding: 0.6rem 1rem;
+  margin-top: auto;
+  border-radius: 0.8rem;
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+ background-color: var(--bg);
+}
+.btnFavorite:active {
+  background-color: var(--border);
+}
+
+.activeFavorite{
+background-color: var(--primary);
+color: var(--card);
+}
