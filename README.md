@@ -26,14 +26,6 @@ Users can search books, view details, and save favorites using localStorage.
 
 ---
 
-## 📦 Installation
-
-```bash
-npm install
-npm run dev
-
----
-
 ## 🌐 Deployment
 
 This project is deployed using Vercel and automatically updates on every push to GitHub.
@@ -41,10 +33,21 @@ This project is deployed using Vercel and automatically updates on every push to
 ---
 
 ## 📸 Preview
-(Add screenshot here)
+![App Preview](./preview.jpg)
 
 ---
 
 ## 🔗 Live Demo
 
 https://your-project.vercel.app
+
+## 📦 Installation
+
+```bash
+
+npm install
+npm run dev
+
+
+
+
