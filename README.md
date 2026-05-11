@@ -39,7 +39,7 @@ This project is deployed using Vercel and automatically updates on every push to
 
 ## 🔗 Live Demo
 
-https://your-project.vercel.app
+[https://your-project.vercel.app](https://book-app-zeta-livid.vercel.app/)
 
 ## 📦 Installation
 
